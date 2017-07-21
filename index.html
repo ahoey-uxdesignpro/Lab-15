@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app "madlibs" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="madLibCtrl">
+
+
+
+
+<p ng-repeat= "words"> {{ words }}</p>
+<input type="text" ng-model="words.food" placeholder="Food item">
+<input type="text" ng-model="words.color" placeholder="Favorite Color"
+<input type="text" ng-model="words.sound" placeholder="Sound">
+<input type="text" ng-model="words.season" placeholder="Season">
+<input type="text" ng-model="words.device" placeholder="Mobile Device">
+<input type="text" ng-model="words.year" placeholder="Enter a Year">
+<input type="text" ng-model="words.scent" placeholder="Favorite Scent">
+<button ng-click="generateSentence(words)" type="button">Create MadLib</button>
+
+<p> {{message + words}} </p>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+<script src="display.js"></script>
+<script src="inputcontroller.js"></script>
+
+  </body>
+</html>
